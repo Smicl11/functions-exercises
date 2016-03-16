@@ -41,7 +41,13 @@ areaOfACircle(2);
 
 
 // 5. Pythagorean Theorem: a2 + b2 = c2
+function pythagoreanTheorem(a, b) {
+    var pT = Math.sqrt(a*a + b*b);
+    return pT;
+}
 
+pythagoreanTheorem(3, 4);
+// should display 5;
 
 
 // 6. Is X Evenly Divisible by Y ?
@@ -64,4 +70,4 @@ isXEvenlyDivisibleByY(99, 3);
 
 
 // 9. Stretch Challenge: Can you alter the printTriangle function to create a Pyramid?
-// LOL, no.
+// https://media3.giphy.com/media/zIwIWQx12YNEI/200.gif
