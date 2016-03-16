@@ -62,11 +62,40 @@ isXEvenlyDivisibleByY(99, 3);
 
 
 // 7. Vowel Count:
+function countVowels(word) {
+	var count = 0;
+	word = word.toLowerCase();
+	for(var i = 0; i < word.length; i++) {
+		if( word[i] === 'a' || word[i] === 'e' || word[i] === 'i' || word[i] === 'o' ||  word[i] === 'u' ||  word[i] === 'y'){
+			count++;
+		}
+	}
+	return count;
+}
 
+countVowels("stealing");
+// displays 3
 
 
 // 8. Build an ASCII Triangle!
+function printTriangle(length) {
+	for(var i = 1; i <= length; i++) {
 
+		var level = '';
+
+		for(var a = 0; a < i; a++) {
+			level += '*';
+		}
+
+		console.log(level);
+	}
+}
+
+printTriangle(3);
+// displays
+// *
+// **
+// ***
 
 
 // 9. Stretch Challenge: Can you alter the printTriangle function to create a Pyramid?
